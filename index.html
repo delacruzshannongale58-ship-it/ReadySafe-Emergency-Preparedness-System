@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b2447">
+<meta name="description" content="ReadySafe is an educational emergency preparedness app with checklists, safety guides, contacts, a planner and a quiz.">
+<title>ReadySafe — Emergency Preparedness System</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2714%27 fill=%27%23d62828%27/%3E%3Cpath d=%27M26 12h12v14h14v12H38v14H26V38H12V26h14z%27 fill=%27white%27/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar no-print">
+  <button id="menuBtn" class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">☰</button>
+  <a class="brand" href="#home" aria-label="ReadySafe home">
+    <span class="logo" aria-hidden="true">+</span>
+    <span>Ready<b>Safe</b></span>
+  </a>
+  <span class="tag">Educational</span>
+</header>
+
+<div class="shell">
+  <nav id="nav" class="nav no-print" aria-label="Main navigation"></nav>
+  <main id="main" tabindex="-1">
+    <noscript><p class="note warn">ReadySafe needs JavaScript to run. Please enable JavaScript in your browser.</p></noscript>
+  </main>
+</div>
+
+<footer class="foot no-print">
+  <p><strong>ReadySafe</strong> is an educational tool, not an official emergency service. It does not contact responders or show live alerts. In an emergency, call 911 or your local emergency number and follow local authorities.</p>
+</footer>
+
+<dialog id="dlg" aria-labelledby="dlgT">
+  <form method="dialog">
+    <h2 id="dlgT"></h2>
+    <p id="dlgM"></p>
+    <div class="row end">
+      <button class="btn ghost" type="submit" value="cancel">Cancel</button>
+      <button class="btn red" type="submit" value="ok" id="dlgOk">Confirm</button>
+    </div>
+  </form>
+</dialog>
+
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="script.js"></script>
+</body>
+</html>
